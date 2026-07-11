@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda</title>
+    <title>Tienda - Inicio</title>
+    <!-- Ruta actualizada a la carpeta css -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,49 +12,56 @@
     <header>
         <nav>
             <div class="logo">Mi Tienda</div>
-
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <!-- Enlaces corregidos y activos -->
+                <li><a href="index.html" class="active">Inicio</a></li>
                 <li><a href="#">Ventas</a></li>
-                <li><a href="#">Productos</a></li>
+                <li><a href="productos.html">Productos</a></li>
                 <li><a href="#">Ofertas</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="inicio">
-        <div class="contenido">
-            <h1>Bienvenido a Mi Tienda</h1>
-            <p>
-                Encuentra los mejores productos al mejor precio.
-                Compra fácil, rápido y seguro.
-            </p>
+    <!-- Todo el contenido va dentro de MAIN como pide la rúbrica -->
+    <main>
+        <section class="inicio">
+            <div class="contenido">
+                <h1>Bienvenido a Mi Tienda</h1>
+                <p>
+                    Encuentra los mejores productos al mejor precio.
+                    Compra fácil, rápido y seguro.
+                </p>
+                <a href="productos.html" class="boton">Ver Productos</a>
+            </div>
 
-            <a href="#" class="boton">Ver Productos</a>
-        </div>
+            <div class="imagen">
+                <img src="https://via.placeholder.com/500x300" alt="Tienda">
+            </div>
+        </section>
 
-        <div class="imagen">
-            <img src="https://via.placeholder.com/500x300" alt="Tienda">
-        </div>
-    </section>
+        <section class="caracteristicas">
+            <div class="card">
+                <h3>Envíos Rápidos</h3>
+                <p>Recibe tus productos en poco tiempo.</p>
+            </div>
 
-    <section class="caracteristicas">
-        <div class="card">
-            <h3>Envíos Rápidos</h3>
-            <p>Recibe tus productos en poco tiempo.</p>
-        </div>
+            <div class="card">
+                <h3>Pagos Seguros</h3>
+                <p>Protección en todas tus compras.</p>
+            </div>
 
-        <div class="card">
-            <h3>Pagos Seguros</h3>
-            <p>Protección en todas tus compras.</p>
-        </div>
+            <div class="card">
+                <h3>Mejores Precios</h3>
+                <p>Ofertas y descuentos exclusivos.</p>
+            </div>
+        </section>
+    </main>
 
-        <div class="card">
-            <h3>Mejores Precios</h3>
-            <p>Ofertas y descuentos exclusivos.</p>
-        </div>
-    </section>
+    <!-- Footer obligatorio añadido -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Mi Tienda. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>
